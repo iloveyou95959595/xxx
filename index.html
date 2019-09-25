@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>쫄리면 뒈지시던가</title>
+	<style type="text/css">
+		body{size: 100% ; text-align: center;background-color: black;}
+		h1{color :white; size: 30px;}
+		#tt{opacity: 0; position: absolute; top: 250px; left: 500px;}	
+		#p1{width: 200px; height: 300px; position: absolute; top: 200px; left: 600px; z-index: 1;}
+		#p2{width: 200px; height: 300px; position: absolute; top: 250px; left: 700px;}
+		#p3{width: 200px; height: 300px;position: absolute; top: 750px; left: 900px;}
+		#tazza{position: absolute; width: 800px; height: auto; top: 200px; left: 500px; z-index: -1; opacity: 0;}
+
+
+	</style>
+</head>
+<body>
+	<h1 id="tt">쫄리면 뒈지시던가</h1>
+	<audio id="mysound" loop>
+		<source src="sound1.mp3" type="audio/ogg">
+		
+	</audio>
+	<div>
+		
+		<img src="p1.jpg" id="p1">
+		<img src="p1.jpg" style="width: 200px; height: 300px; position: absolute; top: 100px; right: 100px;">
+		<img src="p1.jpg" style="width: 200px; height: 300px; position: absolute; top: 700px; left: 100px;">
+		<img src="p2.png" id="p2">
+		<img src="p2.png" style="width: 200px; height: 300px; position: absolute; top: 460px; right: 80px;">
+		<img src="p2.png" style="width: 200px; height: 300px; position: absolute; top: 600px; left: 450px;">
+		<img src="p3.jpeg" id="p3">
+		<img src="p3.jpeg" style="width: 200px; height: 300px; position: absolute; top: 100px; left: 900px;">
+		<img src="p3.jpeg" style="width: 200px; height: 300px; position: absolute; top: 300px; right: 200px;">
+		<img src="tazza.jpg" id="tazza">
+		
+	</div>
+
+		<script type="text/javascript">
+			p1.onclick = function(){
+				p2.style.opacity = "0";
+				p1.style.opacity = "0";
+				p3.style.opacity = "0";
+
+				tazza.style.opacity = "1";
+				tt.style.opacity = "1";
+				mysound.play();
+			}
+		
+	</script>
+
+</body>
+</html>
